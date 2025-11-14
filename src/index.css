@@ -1,18 +1,15 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     font-family: "Karla", sans-serif;
     margin: 0;
 }
-
 main {
     margin-inline: auto;
     padding: 36px;
     max-width: 600px;
 }
-
 .header {
     display: flex;
     align-items: center;
@@ -21,24 +18,20 @@ main {
     color: white;
     padding: 20px;
 }
-
 .header > img {
     height: 100%;
     margin-right: 6px;
 }
-
 .header > h1 {
     font-size: 1.25rem;
     margin-right: auto;
 }
-
 .form {
     display: grid;
     grid-template: auto auto / 1fr 1fr;
     gap: 17px;
     margin-bottom: 17px;
 }
-
 .form input {
     width: 100%;
     margin-top: 5px;
@@ -46,7 +39,6 @@ main {
     border: 1px solid #D5D4D8;
     text-indent: 5px;
 }
-
 .form button {
     grid-column: 1 / -1;
     border-radius: 5px;
@@ -55,12 +47,36 @@ main {
     border: none;
     cursor: pointer;
 }
-
 .form input, .form button {
     min-height: 40px;
     font-family: "Karla", sans-serif;
 }
-
+.meme-container {
+    position: relative;
+}
+.download-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: "Karla", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.1s;
+}
+.download-btn:hover {
+    transform: scale(1.05);
+}
+.download-btn:active {
+    transform: scale(0.95);
+}
 .meme {
     position: relative;
     display: flex;
@@ -68,13 +84,11 @@ main {
     justify-content: center;
     align-items: center;
 }
-
 .meme > img {
     max-width: 100%;
     height: auto;
     border-radius: 3px;
 }
-
 .meme span {
     position: absolute;
     text-align: center;
@@ -96,11 +110,9 @@ main {
         -2px 0 0 #000,
         2px 2px 5px #000;
 }
-
 .bottom {
     bottom: 0;
 }
-
 .top {
     top: 0;
 }
